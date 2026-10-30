@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Login · SocialHub{% endblock %}{% block content %}<section class="form-card"><p class="eyebrow">WELCOME BACK</p><h1>Log in to SocialHub</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button class="primary">Log in</button></form><p>New here? <a href="{% url 'register' %}">Create an account</a></p></section>{% endblock %}
